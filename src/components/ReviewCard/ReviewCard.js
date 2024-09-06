@@ -1,14 +1,21 @@
+import "./ReviewCard.css"
+
 function ReviewCard({ props }) {
     return (
-        <>
-            <h3>Rating</h3>
-            <section>
-                <p>{props.rating}</p>
-                <img />
-                <p>{props.name}</p>
-                <p>{props.review}</p>
-            </section>
-        </>
+        <div className="review-card">
+            <div className="review-header">
+                <p>Rating: {props.rating}</p>
+            </div>
+            <div className="reivew-content">
+                <div className="review-user">
+                    <img src={props.image} alt={props.id} />
+                    <p>{props.name}</p>
+                </div>
+                <div className="review-description">
+                    <p>{props.review}</p>
+                </div>
+            </div>
+        </div>
     )
 }
 

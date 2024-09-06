@@ -1,3 +1,7 @@
+import imageLower from "../../assets/Mario_and_Adrian_A.jpg"
+import imageUpper from "../../assets/Mario_and_Adrian_B.jpg"
+import "./About.css"
+
 const aboutLittleLemon = {
     title: "Little Lemon",
     subTitle: "Chicago",
@@ -8,15 +12,25 @@ const aboutLittleLemon = {
 
 function About() {
     return (
-        <>
-            <h1>{aboutLittleLemon.title}</h1>
-            <h4>{aboutLittleLemon.subTitle}</h4>
-            <p>{aboutLittleLemon.description}</p>
-            <section>
-                <img />
-                <img />
-            </section>
-        </>
+        <div className="about-section">
+            <div className="about-grid">
+                <div className="description">
+                    <div className="about-header">
+                        <h1>{aboutLittleLemon.title}</h1>
+                    </div>
+                    <div className="about-subheader">
+                        <h4>{aboutLittleLemon.subTitle}</h4>
+                    </div>
+                    <div className="about-description">
+                        <p>{aboutLittleLemon.description}</p>
+                    </div>
+                </div>
+                <div className="image">
+                    <img className="image-upper" src={imageUpper} alt="Mario and Adrian B" />
+                    <img className="image-lower" src={imageLower} alt="Mario and Adrian A" />
+                </div>
+            </div>
+        </div>
     )
 }
 

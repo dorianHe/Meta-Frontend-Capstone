@@ -1,0 +1,71 @@
+.about-section {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+}
+
+/* About Grid - Flexbox for Description and Images Side by Side */
+.about-grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  gap: 20px; /* Space between description and images */
+}
+
+/* Description Section */
+.description {
+  flex: 1; /* Takes up available space */
+}
+
+/* About Header */
+.about-header h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+/* About Subheader */
+.about-subheader h4 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #ff5733;
+}
+
+/* About Description */
+.about-description p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #666;
+  margin-bottom: 20px;
+  max-width: 500px; /* Set a max width for better readability */
+}
+
+/* Image Section */
+.image {
+  position: relative; /* Set relative positioning for overlap */
+  flex: 1; /* Takes up available space */
+  display: flex;
+  justify-content: center;
+}
+
+.image-lower {
+  width: 350px; /* Set image size */
+  height: auto;
+  position: relative; /* Keeps it in the normal document flow */
+  z-index: 2; /* Places the upper image on top */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds shadow for better visuals */
+}
+
+.image-upper {
+  width: 350px; /* Same size as upper image */
+  height: auto;
+  position: absolute; /* Absolute positioning for overlap */
+  top: 60px; /* Move it slightly lower than the upper image */
+  left: 300px; /* Adjusts the overlap */
+  z-index: 1; /* Places this image behind the upper image */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

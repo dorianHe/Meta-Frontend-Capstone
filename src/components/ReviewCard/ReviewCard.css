@@ -1,0 +1,60 @@
+.review-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds shadow for a card effect */
+  padding: 20px;
+  max-width: 300px; /* Set a max width for the card */
+  margin: 20px;
+  display: flex;
+  flex-direction: column; /* Stack the elements vertically */
+  justify-content: flex-start;
+  height: 100%;
+}
+
+/* Review Header (for the rating) */
+.review-header {
+  font-size: 24px;
+  font-weight: bold;
+  color: #f39c12; /* Example color for rating stars or score */
+  text-align: center; /* Center the rating */
+  margin-bottom: 10px;
+}
+
+/* Review Content Section */
+.review-content {
+  flex-grow: 1; /* Let the content grow and take available space */
+}
+
+/* Review User Section */
+.review-user {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+/* User Image */
+.review-user img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; /* Makes the image a circle */
+  object-fit: cover; /* Ensures the image fits well */
+  margin-right: 10px; /* Space between image and name */
+}
+
+/* User Name */
+.review-user p {
+  font-weight: bold;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Review Description */
+.review-description p {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.6; /* Increase readability */
+  text-align: left; /* Ensures the text is aligned to the left */
+  margin-top: 10px;
+  color: #333333;
+  font-family: "Markazi Text", serif;
+}

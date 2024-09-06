@@ -1,0 +1,71 @@
+/* Hero Section */
+.hero {
+  color: white;
+  background-color: #4a6151; /* Dark background */
+  height: 20rem;
+  padding: 40px 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two-column grid */
+  align-items: start;
+  /* gap: 40px; Space between columns */
+  text-align: left;
+  justify-items: end;
+  column-gap: 20rem;
+}
+
+/* Content Container */
+.hero .content {
+  max-width: 450px; /* Restrict the width of the content */
+}
+
+/* Headings */
+.hero h1 {
+  font-size: 56px; /* Increased font size for the main heading */
+  margin: 0;
+  font-weight: bold;
+  color: #ffcc33; /* Bright yellow color for the heading */
+}
+
+.hero h2 {
+  font-size: 36px; /* Font size for the subheading */
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: #f0f0f0; /* Lighter text color for the subheading */
+}
+
+/* Lead Text */
+.hero .lead-text {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  color: #f0f0f0;
+  font-family: Karla, sans-serif;
+}
+
+/* Button */
+.hero input[type="button"] {
+  background-color: #ffcc33; /* Bright yellow background for the button */
+  color: #333333; /* Dark text color */
+  padding: 15px 30px; /* Increased padding for the button */
+  border: none;
+  border-radius: 10px; /* Rounded corners */
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold; /* Bold text */
+}
+
+.hero input[type="button"]:hover {
+  background-color: #e6b800; /* Darker yellow on hover */
+}
+
+/* Image */
+.hero .image {
+  padding: 0 0 0 50px;
+}
+
+.hero img {
+  width: 40%; /* Ensure image doesn't exceed container size */
+  height: auto;
+  border-radius: 16px; /* Rounded corners for the image */
+  /* grid-column: 2 / 3; Position the image in the second column */
+}
