@@ -15,7 +15,7 @@ const doormatNavigation = [
     },
     {
         name: "Reservations",
-        href: ""
+        href: "/reservation"
     },
     {
         name: "Order Online",
@@ -67,7 +67,7 @@ function FooterItem({ props }) {
                 {props.map(
                     (item) => {
                         return <li key={item}>
-                            <a href={item.href} className="footer-link">{item.name}</a>
+                            <a key={item} href={item.href} className="footer-link">{item.name}</a>
                         </li>
                     }
                 )}

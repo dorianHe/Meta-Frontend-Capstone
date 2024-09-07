@@ -1,23 +1,22 @@
 import './App.css';
-// import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
-// import BookingPage from "../BookingPage/BookingPage"
-import Homepage from './components/Homepage/Homepage';
+import Main from './components/Main/Main';
+import About from './components/About/About';
 import Nav from './components/Nav/Nav';
-
+import BookingPage from "./components/BookingPage/BookingPage";
+import ConfirmedBooking from './components/ConfirmedBooking/ConfirmedBooking';
 
 function App() {
     return (
-        // <Router>
         <>
-            <Nav />
-            <Homepage />
-            {/* <Routes> */}
-            {/* <Route path="/" element={<Homepage />} /> */}
-            {/* <Route path="/about" element={<About />} /> */}
-            {/* <Route path="/menu" element={<Specials />} /> */}
-            {/* </Routes> */}
-            {/* // </Router> */}
+            <Router>
+                <Routes>
+                    <Route path="/" element={<Main />} />
+                    <Route path="/reservation" element={<BookingPage />} />
+                    <Route path="/confirmation" element={<ConfirmedBooking />} />
+                </Routes>
+            </Router>
         </>
     );
 }

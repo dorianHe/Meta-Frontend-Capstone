@@ -1,7 +1,9 @@
+import { useNavigate } from "react-router-dom";
 import RestaurantFood from "../../assets/RestaurantFood.jpg";
 import './CallToAction.css';
 
 function CallToAction() {
+    const navigate = useNavigate();
     return (
         <div className="hero">
             <div className="content">
@@ -10,7 +12,7 @@ function CallToAction() {
                 <p className="lead-text">
                     We are family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.
                 </p>
-                <input type="button" value="Reserve a table" />
+                <button onClick={() => { navigate("/reservation") }} aria-label="Go to reservation table page."> Reserve a table</button>
             </div>
             <div className="image">
                 <img id="restaurantfood" src={RestaurantFood} alt="Restaurant Food" />
