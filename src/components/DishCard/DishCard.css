@@ -1,5 +1,6 @@
 .special-card {
   display: flex;
+  width: 60%;
   flex-direction: column;
   justify-content: space-between; /* Ensures the footer stays at the bottom */
   background-color: white;
@@ -13,14 +14,13 @@
   width: 100%; /* Take up full width of the container */
   height: 200px; /* Fixed height, adjust based on your needs */
   object-fit: cover; /* Ensures image maintains aspect ratio and covers the area */
-  border-radius: 10px;
+  border-radius: 16px;
 }
 
 .card-content h3 {
   font-size: 24px;
-  margin: 0 0 10px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -33,7 +33,7 @@
   text-align: left; /* Aligns the text to the left */
   font-size: 16px; /* Adjust the font size as needed */
   color: rgb(73, 94, 87); /* Text color for readability */
-  margin-top: 10px; /* Optional: adjust spacing */
+  margin-top: 10px;
   margin-bottom: 20px;
   padding: 0px 0.6rem;
   font-family: Karla, sans-serif;
@@ -46,17 +46,13 @@
   display: inline-block;
 }
 
-.delivery-link:hover {
-  text-decoration: underline;
-}
-
 .card-footer {
   display: flex;
   column-gap: 15px;
 }
 
 .card-footer button {
-  width: 50%;
+  width: 30%;
   background: none;
   border: none;
   padding: 0;
@@ -71,6 +67,6 @@
 }
 
 .special-card .delivery-icon {
-  width: 15%;
+  width: 10%;
   height: auto;
 }

@@ -1,0 +1,71 @@
+form {
+  display: grid;
+  max-width: 400px;
+  gap: 20px;
+  margin: 0 auto; /* Center the form */
+  padding: 100px;
+}
+
+label {
+  font-size: 16px;
+  color: #333;
+  font-weight: 600;
+  font-family: "Karla", sans-serif;
+}
+
+input[type="date"],
+select,
+input[type="number"] {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  color: #42584e; /* Slightly dark green for text */
+  background-color: #f1f4f3; /* Light gray background for inputs */
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  text-align: left;
+  font-weight: bold; /* Bold text */
+}
+
+input[type="submit"] {
+  background-color: #f4c400; /* Yellow background color */
+  color: black; /* Black text */
+  padding: 15px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+
+input[type="submit"]:hover {
+  background-color: #ddb900; /* Slightly darker yellow on hover */
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  color: black;
+  cursor: pointer;
+}
+
+select {
+  appearance: none; /* Remove the default arrow for select elements */
+}
+
+select:focus,
+input[type="number"]:focus,
+input[type="date"]:focus {
+  outline: none;
+  border: 1px solid #42584e; /* Focused border with green shade */
+}
+
+option {
+  padding: 10px;
+  font-size: 16px;
+}
+
+input::placeholder {
+  color: #999;
+}

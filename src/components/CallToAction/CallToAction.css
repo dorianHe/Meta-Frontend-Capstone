@@ -3,7 +3,7 @@
   color: white;
   background-color: #4a6151; /* Dark background */
   height: 20rem;
-  padding: 40px 20px;
+  padding: 40px 40px 90px;
   display: grid;
   grid-template-columns: 1fr 1fr; /* Two-column grid */
   align-items: start;
@@ -15,7 +15,7 @@
 
 /* Content Container */
 .hero .content {
-  max-width: 450px; /* Restrict the width of the content */
+  width: 450px;
 }
 
 /* Headings */
@@ -23,7 +23,9 @@
   font-size: 56px; /* Increased font size for the main heading */
   margin: 0;
   font-weight: bold;
-  color: #ffcc33; /* Bright yellow color for the heading */
+  color: #ffcc33;
+  text-align: left;
+  font-family: "Karla", sans-serif;
 }
 
 .hero h2 {
@@ -31,6 +33,7 @@
   margin-top: 10px;
   margin-bottom: 20px;
   color: #f0f0f0; /* Lighter text color for the subheading */
+  font-family: "Karla", sans-serif;
 }
 
 /* Lead Text */
@@ -54,18 +57,12 @@
   font-weight: bold; /* Bold text */
 }
 
-.hero input[type="button"]:hover {
-  background-color: #e6b800; /* Darker yellow on hover */
-}
-
-/* Image */
 .hero .image {
-  padding: 0 0 0 50px;
+  justify-self: start;
 }
 
-.hero img {
-  width: 40%; /* Ensure image doesn't exceed container size */
-  height: auto;
-  border-radius: 16px; /* Rounded corners for the image */
-  /* grid-column: 2 / 3; Position the image in the second column */
+.hero .image img {
+  width: 90%;
+  /* height: auto; */
+  border-radius: 16px;
 }

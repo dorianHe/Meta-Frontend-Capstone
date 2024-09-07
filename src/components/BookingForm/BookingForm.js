@@ -2,6 +2,7 @@ import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 import { useFormik } from "formik";
 import { submitAPI } from "../../utils/temp";
+import "./BookingForm.css"
 import * as Yup from "yup";
 
 function BookingForm({ availableTimes, dispatch }) {
@@ -33,48 +34,46 @@ function BookingForm({ availableTimes, dispatch }) {
 
     useEffect(() => {
         dispatch({ type: "UPDATE_TIMES", date: new Date(formik.values.date) });
-    }, [formik.values.date])
+    }, [formik.values.date, dispatch])
 
 
     return (
-        <>
-            <form onSubmit={formik.handleSubmit} style={{ display: 'grid', maxWidth: '200px', gap: '20px' }}>
-                <label htmlFor="res-date">Choose date</label>
-                <input
-                    type="date"
-                    id="res-date"
-                    {...formik.getFieldProps("date")}
-                />
+        <form onSubmit={formik.handleSubmit} style={{ display: 'grid', maxWidth: '200px', gap: '20px' }}>
+            <label htmlFor="res-date">Choose date</label>
+            <input
+                type="date"
+                id="res-date"
+                {...formik.getFieldProps("date")}
+            />
 
-                <label htmlFor="res-time">Choose time</label>
-                <select data-testid="res-time" id="res-time" {...formik.getFieldProps("time")}>
-                    {availableTimes.times.map((availableTime, index) => (
-                        <option key={index} value={availableTime}>
-                            {availableTime}
-                        </option>
-                    ))}
-                </select>
+            <label htmlFor="res-time">Choose time</label>
+            <select data-testid="res-time" id="res-time" {...formik.getFieldProps("time")}>
+                {availableTimes.times.map((availableTime, index) => (
+                    <option key={index} value={availableTime}>
+                        {availableTime}
+                    </option>
+                ))}
+            </select>
 
-                <label htmlFor="guests">Number of guests</label>
-                <input
-                    data-testid="guests"
-                    type="number"
-                    placeholder="1"
-                    min="1"
-                    max="10"
-                    id="guests"
-                    {...formik.getFieldProps("guests")}
-                />
+            <label htmlFor="guests">Number of guests</label>
+            <input
+                data-testid="guests"
+                type="number"
+                placeholder="1"
+                min="1"
+                max="10"
+                id="guests"
+                {...formik.getFieldProps("guests")}
+            />
 
-                <label htmlFor="occasion">Occasion</label>
-                <select data-testid="occasion" id="occasion" {...formik.getFieldProps("occasion")}>
-                    <option value="birthday">Birthday</option>
-                    <option value="anniversary">Anniversary</option>
-                </select>
+            <label htmlFor="occasion">Occasion</label>
+            <select data-testid="occasion" id="occasion" {...formik.getFieldProps("occasion")}>
+                <option value="birthday">Birthday</option>
+                <option value="anniversary">Anniversary</option>
+            </select>
 
-                <input type="submit" value="Make Your reservation" />
-            </form>
-        </>
+            <input type="submit" value="Make Your reservation" />
+        </form>
     );
 }
 

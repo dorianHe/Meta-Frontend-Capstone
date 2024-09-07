@@ -1,30 +1,30 @@
 /* Container for the entire navbar */
 .navbar {
-  display: flex; /* Use Flexbox */
-  justify-content: space-around;
+  display: grid; /* Use Flexbox */
   align-items: center; /* Align items vertically in the center */
-  padding: 10px 20px; /* Add some padding */
+  justify-content: center;
+  padding-bottom: 40px;
   background-color: white; /* Background color */
-  height: 80px; /* Adjust as needed */
+  height: 100px; /* Adjust as needed */
   border-bottom: 1px solid #ccc; /* Optional: adds a border under the navbar */
+  font-family: "Karla", sans-serif;
 }
 
 /* Logo styles */
 .navbar .logo {
-  width: 120px; /* Set a fixed width for the logo */
+  width: 160px; /* Set a fixed width for the logo */
   height: auto; /* Auto height to maintain aspect ratio */
+  margin-right: 30px;
 }
 
 /* Navigation styles */
 .navbar ul {
   list-style: none; /* Remove bullets */
-  margin: 0;
-  padding: 0;
   display: flex; /* Flexbox to align items horizontally */
 }
 
 .navbar ul li {
-  margin: 0 20px; /* Space out the links */
+  margin: 50px 20px 10px;
 }
 
 .navbar ul li a {

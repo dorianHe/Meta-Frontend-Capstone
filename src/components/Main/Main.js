@@ -4,7 +4,6 @@ import CallToAction from "../CallToAction/CallToAction"
 import Specials from "../Specials/Specials"
 import CustomersSay from "../CustomersSay/CustomersSay"
 import Footer from "../Footer/Footer"
-import BookingPage from "../BookingPage/BookingPage";
 
 
 function Main() {

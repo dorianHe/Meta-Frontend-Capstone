@@ -1,9 +1,8 @@
-/* Specials Section */
 .specials-section {
-  padding: 100px 20px;
-  background-color: #f9f9f9;
-  text-align: center;
-  display: grid;
+  display: flex;
+  height: 950px;
+  flex-direction: column;
+  padding-left: 50px; /* Optional: Adds padding to the left for spacing */
 }
 
 .specials-header {
@@ -33,11 +32,12 @@
 }
 
 .menu-button:hover {
-  background-color: #e6b800; /* Darker yellow on hover */
+  background-color: #e6b800;
 }
 
 .specials-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 40px;
+  gap: 10px;
+  justify-items: center;
 }

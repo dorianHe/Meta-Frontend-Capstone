@@ -10,28 +10,28 @@ const reviews = [
         id: 1,
         name: "John",
         review: "I loved the experience at the restaurant! The food was delicious and the service was exceptional. I will definitely be back more often!",
-        rating: 5,
+        rating: "★★★★★",
         image: John
     },
     {
         id: 2,
         name: "Ann",
         review: "I went to the restaurant with my family and we were very pleased with everything.",
-        rating: 4,
+        rating: "★★★★★",
         image: Ann
     },
     {
         id: 3,
         name: "Leo",
         review: "The quality of the ingredients and the preparation of the dishes were impeccable.!",
-        rating: 5,
+        rating: "★★★★★",
         image: Leo,
     },
     {
         id: 4,
         name: "Gaby",
         review: "The restaurant has a great variety of dishes and all the ones I tried were excellent.",
-        rating: 5,
+        rating: "★★★★★",
         image: Gaby
     }
 

@@ -28,15 +28,15 @@ const doormatNavigation = [
 ];
 const contact = [
     {
-        name: "Adress",
+        name: "Placehoder address",
         href: ""
     },
     {
-        name: "phone number",
+        name: "+55 11 9999-9999",
         href: ""
     },
     {
-        name: "email",
+        name: "littlelemon@xmail.com",
         href: ""
     }
 ];
@@ -66,7 +66,7 @@ function FooterItem({ props }) {
             <ul>
                 {props.map(
                     (item) => {
-                        return <li key={item}>
+                        return <li key={item.name}>
                             <a key={item} href={item.href} className="footer-link">{item.name}</a>
                         </li>
                     }

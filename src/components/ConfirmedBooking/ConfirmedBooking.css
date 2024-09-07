@@ -1,0 +1,76 @@
+/* Confirmation Section */
+.confirmation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  padding: 40px 20px;
+  background-color: #fff;
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: "Karla", sans-serif;
+}
+
+.confirmation h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.confirmation .lead-txt {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.confirmation h2 {
+  font-size: 28px;
+  color: #f4c400;
+  padding: 15px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 400px;
+  margin: 20px 0;
+  font-weight: bold;
+}
+
+.confirmation .details {
+  text-align: left;
+  background-color: #42584e;
+  border-radius: 1.6rem;
+  width: auto;
+  height: 300px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.confirmation span {
+  display: block;
+  font-size: 18px;
+  margin: 10px 0;
+  color: #f4f7f6;
+  font-weight: bold;
+}
+
+.confirmation span strong {
+  color: #f4f7f6;
+  margin-right: 5px;
+}
+
+/* Back to Home Button */
+.confirmation button {
+  background-color: #f4c400;
+  border: none;
+  color: black;
+  font-size: 16px;
+  padding: 15px 30px;
+  margin-top: 30px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.confirmation button:hover {
+  background-color: #ddb900;
+}

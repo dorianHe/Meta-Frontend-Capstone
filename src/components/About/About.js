@@ -1,33 +1,31 @@
-import imageLower from "../../assets/Mario_and_Adrian_A.jpg"
-import imageUpper from "../../assets/Mario_and_Adrian_B.jpg"
+import imageA from "../../assets/Mario_and_Adrian_A.jpg"
+import imageB from "../../assets/Mario_and_Adrian_B.jpg"
 import "./About.css"
 
 const aboutLittleLemon = {
     title: "Little Lemon",
     subTitle: "Chicago",
-    description: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. ",
-    image_one: "",
-    image_two: ""
+    descriptionOne: "Little Lemon is owned by two Italian brothers, Mario and Adrian, who moved to the United States to pursue their shared dream of owning a restaurant.",
+    descriptionTwo: "To craft the menu, Mario relies on family recipes and his experience as a chef in Italy.Adrian does all the marketing for the restaurant and led the effort to expand the menu beyond classic Italian to incorporate additional cuisines from the Mediterranean region.",
 }
 
 function About() {
     return (
         <div className="about-section">
             <div className="about-grid">
-                <div className="description">
-                    <div className="about-header">
-                        <h1>{aboutLittleLemon.title}</h1>
+                <div className="about-description">
+                    <h2>{aboutLittleLemon.title}</h2>
+                    <h4>{aboutLittleLemon.subTitle}</h4>
+                    <div className="about-description-one">
+                        <p>{aboutLittleLemon.descriptionOne}</p>
                     </div>
-                    <div className="about-subheader">
-                        <h4>{aboutLittleLemon.subTitle}</h4>
-                    </div>
-                    <div className="about-description">
-                        <p>{aboutLittleLemon.description}</p>
+                    <div className="about-description-two">
+                        <p>{aboutLittleLemon.descriptionTwo}</p>
                     </div>
                 </div>
                 <div className="image">
-                    <img className="image-upper" src={imageUpper} alt="Mario and Adrian B" />
-                    <img className="image-lower" src={imageLower} alt="Mario and Adrian A" />
+                    <img className="image-upper" src={imageB} alt="Mario and Adrian B" />
+                    <img className="image-lower" src={imageA} alt="Mario and Adrian A" />
                 </div>
             </div>
         </div>
