@@ -5,7 +5,7 @@ import { submitAPI } from "../../utils/temp";
 import * as Yup from "yup";
 
 function BookingForm({ availableTimes, dispatch }) {
-    // const navigate = useNavigate();
+    const navigate = useNavigate();
 
     const formik = useFormik(
         {
@@ -26,7 +26,7 @@ function BookingForm({ availableTimes, dispatch }) {
                 date: Yup.date().required("Date is required"),
                 time: Yup.string().oneOf(availableTimes.times).required("Time is required"),
                 guests: Yup.number().min(1, "Must be at least 1").max(10, "Must be at most 10").required("Number of guests is required"),
-                occasion: Yup.string().oneOf(["birthday", "engagement", "anniversary"]).required("Occasion is required"),
+                occasion: Yup.string().oneOf(["birthday", "anniversary"]).required("Occasion is required"),
             }),
         }
     );
